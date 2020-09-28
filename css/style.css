@@ -1,0 +1,84 @@
+:root {
+    --dark-color: rgba(3, 47, 16, 0.609);
+    --medium-color: rgba(8, 102, 38, 0.329);
+    --light-color: rgba(16, 192, 16, 0.198);
+    --text-color: rgb(124, 216, 101, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    font-size: 1.5rem;
+    line-height: 1.7;
+    padding: 2rem;
+    color: var(--text-color);
+}
+
+.header {
+    height: 95vh;
+    background-image: linear-gradient(to bottom right, var(--medium-color), var(--light-color)), 
+    url('../img/landscape3.jpg');
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+
+.logo-box {
+    position: absolute;
+    top: 5.5%;
+    left: 2.5%;
+}
+
+.logo {
+    height: 1.7rem;
+}
+
+.text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.heading-primary {
+    text-transform: uppercase;
+}
+
+.heading-primary-main {
+    display: block;
+    font-size: 7rem;
+    letter-spacing: 1.3rem;
+    animation-name: moveInLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes moveInLeft {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    60% {
+        transform: translateX(30px);
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
