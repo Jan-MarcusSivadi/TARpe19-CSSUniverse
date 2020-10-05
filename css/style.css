@@ -27,7 +27,7 @@ body {
     background-blend-mode: darken;
     background-size: cover;
     background-position: center;
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 82%, 0 95%);
 }
 
 .logo-box {
@@ -83,6 +83,86 @@ body {
     color: var(--text-color);
     text-decoration: none;
     line-height: 5.3;
+}
+
+.about {
+    background-color: black;
+    padding: 25rem 0;
+    margin-top: -30vh;
+}
+
+.u-center-text {
+    text-align: center;
+}
+.u-margin-bottom-big {
+    margin-bottom: 8rem;
+}
+.u-margin-bottom-small {
+    margin-bottom: 1.5rem;
+}
+
+.heading-secondary {
+    font-size: 3.5rem;
+    display: inline-block;
+    text-transform: uppercase;
+    color: transparent;
+    background-image: linear-gradient(to right, var(--text-color), var(--dark-color));
+    background-clip: text;
+    letter-spacing: 0.2rem;
+}
+.heading-secondary:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0rem 0rem 2rem rgba(30, 255, 0, 0.3);
+    transition: all 2s;
+}
+
+.row {
+    max-width: 114rem;
+    margin: 0 auto;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col-1-of-2 {
+    float: left;
+    width: 50%;
+    padding: 1rem;
+}
+
+.heading-tertiary {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.paragraph {
+    font-size: 1.5rem;
+}
+.paragraph:not(:last-child) {
+    margin-bottom: 3rem;
+}
+
+.btn-text:link, .btn-text:visited {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    display: inline-block;
+    text-decoration: none;
+    line-height: 1;
+    border-bottom: 0.1rem solid var(--text-color);
+    padding: 0.5rem;
+    padding-bottom: 1rem;
+    transition: all 0.2s;
+}
+.btn-text:hover {
+    background-color: var(--dark-color);
+    color: white;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+}
+.btn-text:active {
+    transform: translateY(0);
 }
 
 @keyframes moveInRight {
