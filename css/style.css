@@ -165,7 +165,7 @@ body {
     border-bottom: 0.1rem solid var(--text-color);
     padding: 0.5rem;
     padding-bottom: 1rem;
-    transition: all 0.2s;
+    transition: all 0.4s;
 }
 .btn-text:hover {
     background-color: var(--dark-color);
@@ -218,14 +218,13 @@ body {
     border-radius: 2px;
     position: absolute;
     outline-offset: 0rem;
-    transition: all 0.5s;
+    transition: 0.2s;
     z-index: 10;
-    box-shadow: 0rem 0rem 2rem rgba(255, 255, 255, 0.3);
+    box-shadow: 0rem 0rem 2rem rgba(216, 214, 214, 0.3);
 }
 .composition__photo--p1 {
     left: 0;
     top: -2rem;
-    z-index: 11;
 }
 .composition__photo--p1:active {
     opacity: 0;
@@ -234,12 +233,10 @@ body {
 .composition__photo--p2 {
     right: 0;
     top: 2rem;
-    z-index: 10;
 }
 .composition__photo--p3 {
     left: 20%;
     top: 10rem;
-    z-index: 12;
 }
 
 .composition__photo:hover {
@@ -249,9 +246,54 @@ body {
     cursor: pointer;
 }
 .composition:hover .composition__photo:not( :hover) {
-    transition: 0.1s;
+    transition: 0.2s;
     transform: scale(0.9);
 }
+
+.col-1-of-4 {
+    float: left;
+    width: 25%;
+    padding: 2rem;
+}
+
+.features {
+    padding: 15rem;
+    height: 90vh;
+    width: 100vw;
+    background-image: linear-gradient(to right bottom, var(--medium-color),
+    var(--dark-color)), url('../img/landscape3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    transform: skewY(-7deg);
+    margin-top: -7rem;
+}
+
+.features > * {
+    transform: skewY(7deg);
+}
+
+.feature-box {
+    background-color: rgba(97, 100, 97, 0.8);
+    font-size: 1.2rem;
+    padding: 1.5rem;
+    border-radius: 3px;
+    text-align: center;
+    color: wheat;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s;
+}
+
+.feature-box i {
+    font-size: 3rem;
+    background-image: linear-gradient(to right, var(--light-color), var(--dark-color));
+    background-clip: text;
+    color: transparent;
+}
+.feature-box:hover {
+    transform: translateY(-1.5rem) scale(1.03);
+}
+
 
 
 
